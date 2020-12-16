@@ -1,0 +1,11 @@
+<!--miniprogram/pages/out/out.wxml-->
+<view class="content">
+  <image class="bc" src="/pages/picture/4.jpg" mode="aspectFill"></image>
+</view>
+
+<view bindtap="setBeg">起点：{{begName}}</view>
+<view bindtap="setEnd">终点：{{endName}}</view>
+<view bindtap="onWatchDemo" class="long">芜狐~(^・ω・^§)ﾉ</view>
+<view wx:if="{{warm}}">室内外温差较大，注意更换衣物</view>
+
+

@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/out/out",
+    "pages/stu/stu",
+    "pages/add/add",
+    "pages/read/read",
+    "pages/new/new"
+  ],
+  "tabBar": {"color": " #FF00FF",
+    
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/picture/主页.png",
+      "selectedIconPath": "pages/picture/主页.png"
+     
+    },
+    {
+      "pagePath": "pages/add/add",
+      "text": "备忘录",
+      "iconPath": "pages/picture/0.png",
+      "selectedIconPath": "pages/picture/0.png"
+     
+    },
+   
+    {
+      "pagePath": "pages/out/out",
+      "text": "外出",
+      "iconPath": "pages/picture/外出.png",
+      "selectedIconPath": "pages/picture/外出.png"
+     
+    },
+    {
+      "pagePath": "pages/read/read",
+      "text": "学习",
+      "iconPath": "pages/picture/学习.png",
+      "selectedIconPath": "pages/picture/学习.png"
+     
+    }]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE82EE",
+    "navigationBarTitleText": "周末包",
+    "navigationBarTextStyle": "black"
+  },
+ 
+  "sitemapLocation": "sitemap96.json",
+  "style": "v2",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.8",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
+}

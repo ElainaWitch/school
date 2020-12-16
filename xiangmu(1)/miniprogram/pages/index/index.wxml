@@ -1,0 +1,10 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="content">
+  <image class="bc" src="/pages/picture/4.jpg" mode="aspectFill"></image>
+</view>
+<image  class="a" src="/pages/picture/weekend1.png"></image>
+
+
+
+<view >宿舍情况</view>
+<view>温度{{temp}} 湿度{{hum}}</view>
