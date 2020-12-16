@@ -1,0 +1,30 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="content">
+  <image class="bc" src="/pages/picture/4.jpg" mode="aspectFill"></image>
+</view>
+<image  class="a" src="/pages/picture/weekend1.png"></image>
+
+<scroll-view class="major" scroll-x >
+  <view class="majorcon">
+    <navigator class="box" url="/pages/weather/weather" >
+      <image class="pic" src="/pages/picture/天气.png"></image>
+      <view class="txt">天气</view>
+    </navigator>
+    <navigator class="box" url="/pages/read/read">
+      <image class="pic" src="/pages/picture/学习.png"></image>
+      <view class="txt">学习</view>
+    </navigator>
+    <navigator class="box" url="/pages/out/out">
+      <image class="pic" src="/pages/picture/外出.png"></image>
+      <view class="txt">外出</view>
+    </navigator>
+    <navigator class="box" url="/pages/add/add">
+      <image class="pic" src="/pages/picture/0.png"></image>
+      <view class="txt">备忘录</view>
+    </navigator>
+  </view>
+</scroll-view>
+
+
+<view>宿舍情况</view>
+<view>温度{{temp}} 湿度{{hum}}</view>

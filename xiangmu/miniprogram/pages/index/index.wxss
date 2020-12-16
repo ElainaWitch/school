@@ -1,0 +1,15 @@
+.majorcon{display: flex;padding: 20rpx 0;flex-wrap: nowrap;}
+.box{text-align: center;padding: 0 26rpx;width: 170rpx;border: 1px  ;}
+.pic{width: 100rpx;height: 100rpx;}
+.txt{font-size: 26rpx;}
+.a{width: 100%;height: 400rpx;}
+page{
+   height: 100%;
+}
+.bc{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}

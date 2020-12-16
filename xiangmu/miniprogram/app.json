@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/out/out",
+    "pages/stu/stu",
+    "pages/add/add",
+    "pages/read/read",
+    "pages/weather/weather"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE82EE",
+    "navigationBarTitleText": "周末包",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap96.json",
+  "style": "v2",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.8",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
+}

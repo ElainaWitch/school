@@ -1,0 +1,46 @@
+<!--miniprogram/pages/read/read.wxml-->
+<view class="content">
+  <image class="bc" src="/pages/picture/4.jpg" mode="aspectFill"></image>
+</view>
+
+<text >{{remainTimeText}}</text>
+<text 
+wx:if="{{isRuning}}" 
+animation="{{nameAnimation}}" 
+>{{completed ? '已完成！' : '学习中'}}</text>
+
+<slider
+min="1" max="45" bindchange="changeWorkTime" 
+value="{{workTime}}" show-value="true"
+wx:if="{{!isRuning}}"
+>
+</slider>
+
+<button 
+	bindtap="startTimer" 
+	data-type="work" 
+	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '提前结束': '开始学习'}}</button>
+      <view wx:if="{{logs.length}}">
+		<button bindtap="switchModal" size="mini" >清除所有记录</button>
+	</view>
+
+<view wx:if="{{logs}}">学习记录</view>
+<block wx:if="{{logs.length}}">
+	<scroll-view scroll-y="true">
+	  	<view  wx:for="{{logs}}" wx:for-index="$index" wx:for-item="log">
+	  		<view>{{log.startTime}}</view>
+				<view>{{log.completed? '完成任务':'提前结束'}}</view>
+	  	</view>
+		</scroll-view>
+</block>
+
+
+	<modal 
+		title="提示" 
+		confirm-text="确定" 
+		cancel-text="取消" 
+		hidden="{{modalHidden}}" 
+		bindconfirm="clearLog" 
+		bindcancel="switchModal">
+	      是否清除？此操作不可恢复!
+	</modal>

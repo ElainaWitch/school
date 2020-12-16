@@ -1,0 +1,4 @@
+<!--miniprogram/pages/weather/weather.wxml-->
+<view>   
+  <text>{{weatherData}}</text>   
+</view>  
